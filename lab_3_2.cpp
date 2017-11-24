@@ -4,18 +4,18 @@ using namespace std;
 
 int main() {
   // เขียนโปรแกรมเพิ่ม เพื่อหาขนาดตัวแปรที่กำหนด
-   cout << "Size of char : " << sizeof(char) << endl;
-   cout << "Size of short signed int : " << sizeof(short signed int) << endl;
-   cout << "Size of short unsigned int : " << sizeof(short unsigned int) << endl;
-   cout << "Size of long int : " << sizeof(long int) << endl;
-   cout << "Size of float : " << sizeof(float) << endl;
+   const float pi = 3.14315926536;
+    float r;
+    float h=15;
 
+    cin >> r;
 
-   // เขียนโปรแกรมเพิ่มเพื่อหาช่วงของค่าที่เก็บได้
-   cout << "Min of char : " << numeric_limits<char>::min() << endl;
-   cout << "Max of char : " << numeric_limits<char>::max() << endl;
+    cout << "Area : " << pi * r * r;
 
-   cout << "Min of short int : " << numeric_limits<short int>::min() << endl;
-   cout << "Max of short int : " << numeric_limits<short int>::max() << endl;
+    cout << "Area : " << 2 * pi * r;
+
+    cout << "Area : " << pi * r * r * h;
+
   return 0;
+}
 }
